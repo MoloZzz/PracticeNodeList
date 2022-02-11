@@ -1,0 +1,35 @@
+#include<iostream>
+
+
+struct ListNode {
+	int data;
+	ListNode* prev;
+	ListNode* next;
+	 
+};
+
+ // build list
+ 
+ ListNode* create_empty_list() {
+ 	ListNode* head = new ListNode;
+ 	head->prev = nullptr;
+ 	head->next = nullptr;
+ 	head->data = 0;
+ 	return head;
+ }
+ 
+ // add item to list
+ ListNode* app_end_item(ListNode* list,int data){
+ 	ListNode* new_node = new ListNode;
+ 	new_node->data = data;
+ 	new_node->next = nullptr;
+ 	ListNode* current = list_head;
+ 	while(current->next != nullptr){
+ 		current = current->next;
+	 }
+ }
+ 
+
+int main(){
+	return 0;
+}
